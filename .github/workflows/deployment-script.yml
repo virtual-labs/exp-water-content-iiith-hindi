@@ -22,7 +22,8 @@ jobs:
         git checkout --orphan gh-pages
         git reset
         git add translation src -f
-        git mv translation src ./ -f
+        git mv translation ./ -f
+        git mv src ./ -f
         git commit -m "https://virtual-labs.github.io/${{ github.repository }} click on the link to test your code."
     - uses: ad-m/github-push-action@master
       with:
