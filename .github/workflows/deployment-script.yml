@@ -21,8 +21,8 @@ jobs:
         git config --local user.name "vleadadmin"
         git checkout --orphan gh-pages
         git reset
-        git add public src -f
-        git mv public src ./ -f
+        git add translation src -f
+        git mv translation src ./ -f
         git commit -m "https://virtual-labs.github.io/${{ github.repository }} click on the link to test your code."
     - uses: ad-m/github-push-action@master
       with:
